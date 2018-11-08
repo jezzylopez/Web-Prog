@@ -4,45 +4,19 @@ body{
 	padding: 0;
 	font-size: 14px;
 	font-weight: normal;
-	background-image: url(abstract.jpg); 
+	background-image: url(580490.jpg); 
 }
-.box{
-	width: 450px;
-	background: rgba(0, 0, 0, 0, 4);
-	padding: 40px;
-	text-align: center;
-	margin: auto;
-	margin-top: 5%;
-	color: black;
-	font-family: 'Century Gothic',sans-serif;
-	background-color: #74b9ff;
-}
-.box-img{
+img{
+	display: block;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 280px;
+	height: 280px;
+	margin-left: 950px;
+    margin-right: 950px;
+    margin-top: 5%;
 }
-.box h1{
-	font-size: 40px;
-	font-style: normal;
-	letter-spacing: 4px;
-	font-weight: 100;
-}
-.box h5{
-	font-size: 25px;
-	letter-spacing: 3px;
-	font-weight: 100;
-}
-.box p{
-	font-family: 'Segoe Print';
-	font-size: 15px;
-	letter-spacing: 2px;
-	font-weight: 100;
 
-}
-.div box{
-	background-color: ;
-}
+
 .nav{
 	width: 350px;
 	height: auto;
@@ -81,4 +55,95 @@ a.active, .nav a:hover{
 }
 .d{
 	width: 90%;
+}
+.content{
+	position: absolute;
+	width: 930px;
+	min-height: 500px;
+	height: auto;
+	right: 0;
+	top: 10%;
+}
+.Home{
+	position: absolute;
+	right: 10;
+	bottom: 0;
+	color: black;
+	font-family: verdana;
+}
+.Home h1{
+	font-size: 90px;
+	padding-right: 90px;
+	border-bottom: 1px solid white;
+	text-transform: uppercase;
+}
+.Home h3{
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+.Home p{
+	font-size: 16px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+
+.ContactInformation{
+	position: absolute;
+	right: 10;
+	top: 10px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display: none;
+}
+.ContactInformation h3{
+	font-size: 16px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
+.ContactInformation p{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 15px;
+
+}
+
+.AskQuestions{
+	position: absolute;
+	right: 10;
+	top: 10px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display: none;
+}
+.AskQuestions p{
+	color: black;
+	font-size: 16px;
+}
+
+.AboutMe{
+	position: absolute;
+	right: 10;
+	top: 10px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+	display: none;
+}
+.AboutMe h2{
+	color: black;
+	font-size: 24px;
+	font-family: verdana;
+}
+.AboutMe p{
+	position: absolute;
+	font-size: 18px;
+	font-stretch: all;
+	color: white;
+	line-height: 20px;
+	margin-bottom: 15px;
+	padding: 5px 0;
+	opacity: 0.6;
 }
