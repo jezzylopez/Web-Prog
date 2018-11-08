@@ -6,23 +6,105 @@
 		
 	</head>
 	<body>
-		
+		<div class="background">
 		<div class="nav">
 			<a class="a active" href="#">Home</a>
 			<a class="b" href="#">Contact Information</a>
 			<a class="c" href="#">Ask Questions</a>
-			<a class="d" href="#">Portfolio</a>
-		
+			<a class="d" href="#">About Me</a>
+
 		</div>
 
-		<div class="box">
-			<img src="jess.jpg" class="box-img">
-			<h1>Jessica Lopez</h1>
-			<h5>Web Developer</h5>
-			<h4>Welcome to my page!</h4>
-			<p>I'm an Information and Technology student and focuses in web designing. </p>
+		<img src="jess.jpg">
+
+		<div class="content">
 			
+			<div class="Home">
+				<h1>Jessica LOpez</h1>
+				<h3>Web Developer</h>
+			</div>
+
+			<div class="ContactInformation">
+				<h3>Contact Number</h3>
+				<p>09084979398</p><br>
+				<h3>Social Media</h3>
+				<p>Facebook: jessicalopeztoledo</p>
+				<p>Instagram: jessie.lo21</p>
+				<p>Email: jessicalopeztoledo@gmail.com</p>
+			</div>
+
+			<div class="AskQuestions">
+				<h3>*Do you play video games?</h3>
+				<p>Yes</p><br>
+				<h3>*Do you watch anime?</h3>
+				<p>Yes</p><br>
+				<h3>*What is your favorite anime</h3>
+				<p>Code Geass</p><br>
+				<h3>*Who is your favorite anime charater?</h3>
+				<p>Lelouch Lamperouge</p>
+			</div>
+
+			<div class="AboutMe">
+				<h2>About Jessica</h2><br>
+				<p>A forth year Information and Technology student from STI Ortigas-Cainta. Currently employed in a private company. Planning to become the Web Developer. Was born on March 21,1992 and living in Taytay Rizal. Most of the time i love to watch anime and play video games.</p>
+				
+			</div>
 		</div>
+
+
+		
+
+
+		</div>
+
+		<script src="jquery.js"></script>
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$('a').click(function(){
+					//alert("i am click");
+					var selected = $(this);
+					$('a').removeClass('active');
+					$(selected).addClass('active');
+				});
+
+				var $a = $('.a'),
+				$b = $('.b'),
+				$c = $('.c'),
+				$d = $('.d'),
+				$home = $('.Home'),
+				$contactinformation = $('.ContactInformation'),
+				$askquestions = $('.AskQuestions'),
+				$AboutMe =$('.AboutMe');
+
+				$a.click(function(){
+					$home.fadeIn();
+					$contactinformation.fadeOut();
+					$askquestions.fadeOut();
+					$AboutMe.fadeOut();
+				});
+				$b.click(function(){
+					$contactinformation.fadeIn();
+					$home.fadeOut();
+					$askquestions.fadeOut();
+					$AboutMe.fadeOut();
+				});
+				$c.click(function(){
+					$askquestions.fadeIn();
+					$home.fadeOut();
+					$contactinformation.fadeOut();
+					$AboutMe.fadeOut();
+				});
+				$d.click(function(){
+					$AboutMe.fadeIn();
+					$home.fadeOut();
+					$askquestions.fadeOut();
+					$contactinformation.fadeOut();
+				});
+
+			});
+
+		</script>
 
 
 	</body>
